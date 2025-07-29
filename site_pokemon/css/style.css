@@ -58,6 +58,7 @@ header .container {
     height: 150px;
 }
 
+/* Nav centralizado */
 .actions {
     display: flex;
     justify-content: center;
@@ -66,6 +67,24 @@ header .container {
     margin-top: 100px;
 }
 
+/* novos estilos para descrição abaixo dos botões */
+.nav-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.nav-item .btn {
+    width: 100%;
+}
+
+.nav-item .description {
+    margin-top: 8px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Botões */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -199,15 +218,18 @@ table {
     border-collapse: collapse;
     margin-top: 20px;
 }
+
 th, td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
 }
+
 th {
     background-color: var(--secondary);
     color: white;
 }
+
 .actions-cell {
     display: flex;
     gap: 10px;
@@ -222,14 +244,17 @@ th {
     margin-bottom: 20px;
     font-size: 16px;
 }
+
 .back .arrow {
     font-size: 20px;
     margin-right: 8px;
     transition: margin-right 0.2s;
 }
+
 .back:hover {
     color: var(--secondary);
 }
+
 .back:hover .arrow {
     margin-right: 12px;
 }
